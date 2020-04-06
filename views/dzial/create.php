@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Dzial */
 
-$this->title = 'Create Dzial';
-$this->params['breadcrumbs'][] = ['label' => 'Dzials', 'url' => ['index']];
+$this->title = 'Utworz Dział';
+$this->params['breadcrumbs'][] = ['label' => 'Dział', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dzial-create">

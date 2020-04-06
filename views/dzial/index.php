@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\DzialSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Dzials';
+$this->title = 'Działy';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="dzial-index">
@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Dzial', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Utwórz Dział', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
