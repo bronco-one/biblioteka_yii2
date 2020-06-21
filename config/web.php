@@ -5,8 +5,10 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
+    'name'=>'App Biblioteka',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'language'=>'pl',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
