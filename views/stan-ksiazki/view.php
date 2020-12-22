@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\models\StanKsiazki */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Stan Ksiazkis', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Stan Książek', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>

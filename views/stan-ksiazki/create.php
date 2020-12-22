@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\StanKsiazki */
 
-$this->title = 'Create Stan Ksiazki';
-$this->params['breadcrumbs'][] = ['label' => 'Stan Ksiazkis', 'url' => ['index']];
+$this->title = 'Dodaj Stan książek';
+$this->params['breadcrumbs'][] = ['label' => 'Stan Książek', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="stan-ksiazki-create">

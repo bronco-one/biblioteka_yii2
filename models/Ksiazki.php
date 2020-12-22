@@ -56,10 +56,10 @@ class Ksiazki extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'isbn' => 'Isbn',
-            'tytul' => 'Tytul',
+            'tytul' => 'Tytuł',
             'autor' => 'Autor',
-            'id_dzial' => 'Id Dzial',
-            'id_stan' => 'Id Stan',
+            'id_dzial' => 'Dział',
+            'id_stan' => 'Stan książki',
         ];
     }
 

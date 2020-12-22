@@ -2,6 +2,9 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
+use app\models\Dzial;
+use app\models\StanKsiazki;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Ksiazki */
@@ -18,12 +21,16 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'autor')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'id_dzial')->textInput() ?>
+    <?= $form->field($model, 'id_dzial')->dropDownList(
+        ArrayHelper::map(Dzial::find()->all(), 'id', 'nazwa'),
+            ['prompt'=>'Wybierz']) ?>
 
-    <?= $form->field($model, 'id_stan')->textInput() ?>
+    <?= $form->field($model, 'id_stan')->dropDownList(
+        ArrayHelper::map(StanKsiazki::find()->all(), 'id', 'stan'),
+            ['prompt'=>'Wybierz']) ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Dodaj', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

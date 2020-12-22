@@ -65,7 +65,7 @@ class KsiazkiController extends Controller
     public function actionCreate()
     {
         $model = new Ksiazki();
-
+        
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         }
