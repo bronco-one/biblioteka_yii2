@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\grid\ActionColumn;
+use yii\data\ActiveDataProvider;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\KsiazkiSearch */
@@ -35,6 +37,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
+        "pager"=>[
+            "prevPageLabel" =>"Poprzednia", 
+            "nextPageLabel" =>"Następna",
+            "firstPageLabel" =>"Pierwsza", 
+            "lastPageLabel" =>"Ostatnia",
+            "options" =>["style" =>"margin-left:200px;", "class" =>"pagination",],
+        ]
     ]); ?>
 
 

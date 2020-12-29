@@ -8,6 +8,7 @@ use app\models\KsiazkiSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\data\ActiveDataProvider;
 
 /**
  * KsiazkiController implements the CRUD actions for Ksiazki model.
@@ -36,7 +37,14 @@ class KsiazkiController extends Controller
     public function actionIndex()
     {
         $searchModel = new KsiazkiSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        /* $dataProvider = $searchModel->search(Yii::$app->request->queryParams);*/
+        $dataProvider = new ActiveDataProvider([
+            "query" => Ksiazki::find(),
+            "pagination" =>[
+                "pagesize"=> 5,
+            ] ,
+            
+        ]);
 
         return $this->render('index', [
             'searchModel' => $searchModel,
